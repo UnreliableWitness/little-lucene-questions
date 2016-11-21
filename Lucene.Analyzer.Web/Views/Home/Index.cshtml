@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Lucene.Analyzer.Web.Controllers.Analysis>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Lucene Standard Analyzers</h1>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+        {
+            <div class="form-group">
+                <textarea required="required" rows="3" placeholder="Enter text to analyze..." class="form-control" style="min-width: 100%" name="inputText">@ViewBag.inputText</textarea>
+                <button class="btn btn-primary" type="submit">analyze it</button>
+
+            </div>
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var analysis in Model)
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">@analysis.AnalyzerTitle</div>
+                <div class="panel-body">
+                    @analysis.Output<br/><br/>
+                    Resulting tokens: <strong>@analysis.TokenCount</strong>
+                </div>
+            </div>
+        }
+    </div>
+</div>

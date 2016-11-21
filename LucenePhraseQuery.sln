@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucene.Tests", "..\Lucene.Tests\Lucene.Tests.csproj", "{AEDBDAC3-FF45-404E-834A-8717BE982086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucene.Analyzer.Web", "Lucene.Analyzer.Web\Lucene.Analyzer.Web.csproj", "{D2AD606A-F754-44FA-9DD2-975260D6B096}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{41A333CF-9E16-499E-9BDF-0B8D429A0651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{944EE03C-6920-4D95-8516-20CA91DF17FD}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{1D85ADF7-6FB6-40C6-9801-858B6B207499}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\LuceneAnalyzerWeb.json = PublishScripts\Templates\LuceneAnalyzerWeb.json
+		PublishScripts\Templates\LuceneAnalyzerWeb.param.dev.json = PublishScripts\Templates\LuceneAnalyzerWeb.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEDBDAC3-FF45-404E-834A-8717BE982086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDBDAC3-FF45-404E-834A-8717BE982086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDBDAC3-FF45-404E-834A-8717BE982086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDBDAC3-FF45-404E-834A-8717BE982086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AD606A-F754-44FA-9DD2-975260D6B096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AD606A-F754-44FA-9DD2-975260D6B096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AD606A-F754-44FA-9DD2-975260D6B096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AD606A-F754-44FA-9DD2-975260D6B096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{944EE03C-6920-4D95-8516-20CA91DF17FD} = {41A333CF-9E16-499E-9BDF-0B8D429A0651}
+		{1D85ADF7-6FB6-40C6-9801-858B6B207499} = {41A333CF-9E16-499E-9BDF-0B8D429A0651}
+	EndGlobalSection
+EndGlobal
